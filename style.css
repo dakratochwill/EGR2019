@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Roboto:300');
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    min-width: 350px;
+    overflow-x: hidden;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin: 30px 0px;
+}
+
+h1 {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+    color: #555;
+}
+
+h3 {
+    font-size: 25px;
+    border-left: 5px solid #ffd166;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+section a:link {
+    color: #000;
+    border-bottom: 1px solid #ffb300;
+}
+
+section a:hover {
+    text-decoration: none;
+    color: #ffb300;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.gray-bg {
+    background: #ececec;
+    color: #000;
+    outline: 1px solid #999;
+    outline-offset: -15px
+}
+
+a.btn-gold,
+a.btn-gold:link {
+    color: #000;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 0px !important;
+    display: inline-block;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #ffd166 50%, black 50%);
+    transition: all 200ms ease;
+    
+}
+
+a.btn-gold:hover {
+    background-position: 0 -100%;
+    color: #fff !important;
+}
+
+a.btn-black,
+a.btn-black:link {
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 0px !important;
+    display: inline-block;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, black 50%, #ffd166 50%);
+    transition: all 200ms ease;
+}
+
+a.btn-black:hover {
+    background-position: 0 -100%;
+    color: #000 !important;
+}
+
+header {
+    background: #111;
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0px;
+}
+
+.container-sm {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+blockquote {
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 10px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-family: 'News Cycle', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*** Navigation classes ***/
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    transition: 200ms ease-in-out;
+    text-transform: capitalize;
+    padding: 20px 0px;
+}
+
+.nav-item .nav-link:hover {
+    background: #ffd166;
+    color: #000;
+}
+
+.search-icon {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    width: 250px;
+    font-weight: 700;
+}
+
+.navbar-brand a {
+    color: inherit;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    font-size: 30px;
+    margin-bottom: 0px !important;
+}
+
+.custom-toggler {
+    color: #000;
+    background: #ffd166;
+    border-radius: 0px;
+}
+
+.custom-toggler:hover {
+    cursor: pointer;
+    color: #ececec;
+}
+
+.search a:hover {
+    background: none !important;
+}
+
+/* dropdown menu animation classes */
+
+@media screen and (min-width:992px) {
+    .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        max-height: 500px;
+    }
+}
+
+#mainNav .dropdown-menu {
+    background: #111;
+    color: #fff;
+    border-radius: 0px;
+    padding: 0px;
+    border: 0px;
+    border-top: 2px solid #ffd166;
+    font-weight: 300;
+    margin-top: -1px
+}
+
+#mainNav .dropdown-menu .dropdown-item {
+    color: #fff;
+    padding: 15px;
+}
+
+#mainNav .dropdown-menu .dropdown-item:hover {
+    background: #ffd166;
+    color: #000;
+    padding: 15px;
+}
+
+#mainNav .dropdown-toggle:after {
+    display: none;
+}
+
+/*** Main Content ***/
+
+.main {
+    max-width: 1200px;
+    margin: 0px auto;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 50px;
+}
+
+.grid-item img {
+    max-width: 100%;
+}
+
+.highlight {
+    background: #ececec;
+    padding: 50px 15px;
+}
+
+.highlight .title {
+    font-size: 35px;
+}
+
+.accordion .card {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.accordion .card-header {
+    padding: 0px;
+    background: #fff;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/*** Footer Styles ***/
+
+.dept-logos img {
+    max-width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dept-logos p {
+    font-size: 15px;
+    margin-bottom: 10px !important;
+}
+
+.footer {
+    height: auto;
+    color: #ececec;
+    background: #111;
+}
+
+.footer .bordered {
+    border-right: 1px solid #444;
+    border-bottom: none;
+    margin: 10px 0px;
+}
+
+.footer .branding {
+    max-width: 100%;
+}
+
+.footer p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer a {
+    color: inherit;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.footer a.btn {
+    background: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0px;
+    border: 1px solid #ffd166;
+    margin-top: 10px;
+}
+
+.footer a.btn:hover {
+    background: #ffd166;
+    color: #000;
+}
+
+.footer a:hover,
+.footer a:hover .icon {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .title {
+    font-size: 22px;
+    color: #ffb300
+}
+
+.footer .subtitle {
+    font-size: 20px;
+    color: #ffb300;
+}
+
+.footer .quote {
+    font-weight: 300;
+}
+
+.footer .social .icon {
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px;
+    color: #ccc;
+}
+
+.sub-footer {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 300;
+    background: #000;
+}
+
+/*** Mobile Styles ***/
+
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+        font-size: 18px;
+        padding-left: 10px
+    }
+
+    .utility-nav {
+        border-top: none;
+        border-left: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 50px;
+    }
+
+    .w-50 {
+        width: 100% !important;
+    }
+
+}
