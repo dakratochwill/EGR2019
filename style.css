@@ -224,7 +224,7 @@ img {
         display: block;
         visibility: visible;
         opacity: 1;
-        max-height: 500px;
+        max-height: 100vh;
     }
 }
 
@@ -252,6 +252,15 @@ img {
 
 #mainNav .dropdown-toggle:after {
     display: none;
+}
+
+#breadcrumb  {
+    background: #ececec;
+    font-size: 14px;
+}
+
+#breadcrumb a {
+    color: #333;
 }
 
 /*** Main Content ***/
@@ -295,6 +304,16 @@ img {
     font-family: 'News Cycle', sans-serif;
     font-weight: 700;
     font-size: 22px;
+}
+.accordion .card-header .icon {
+    float: right;
+    display: block;
+    margin-top: 6px;
+    transition: 300ms transform ease-in-out;
+}
+
+.accordion .card-header .collapsed .icon {
+    transform: rotate(135deg);
 }
 
 /*** Footer Styles ***/
